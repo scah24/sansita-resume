@@ -9,5 +9,4 @@ Theme: shades of blue, black and brown. The site stores progress (XP, badges, co
 2. Click badges and "Complete Quest" buttons to claim XP. Progress is saved locally.
 3. To reset progress: press Ctrl/Cmd + R and confirm the dialog to clear local progress.
 
-## Deployment
-Two easy options are provided in the instructions after deployment files are created.
+
