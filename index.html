@@ -1,0 +1,142 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sansita Chaudhury — Gamified Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Gamified interactive resume of Sansita Chaudhury." />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-left">
+        <h1 class="name">Sansita <span>Chaudhury</span></h1>
+        <p class="role">Student — BE-CSE</p>
+        <div class="level-card">
+          <div class="level-info">
+            <div>Level <span id="level">1</span></div>
+            <div class="xp">XP <span id="xp">0</span>/<span id="xp-max">200</span></div>
+          </div>
+          <div class="xp-bar" id="xp-bar"><div class="xp-fill" id="xp-fill" style="width:0%"></div></div>
+        </div>
+      </div>
+      <nav class="hero-right">
+        <button class="btn" id="claim-all">Claim All Badges</button>
+        <a class="btn ghost" href="#projects">Projects</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <aside class="left-col">
+        <section class="card contact" id="contact">
+          <h3>Contact</h3>
+          <p>Address: Nikoo Homes, Bhartiya City, Thanisandra Main Road, Bengaluru, 560064, India</p>
+          <p>Phone: <a href="tel:+918792862928">08792862928</a></p>
+          <p>Email: <a href="mailto:sansita2403@gmail.com">sansita2403@gmail.com</a></p>
+        </section>
+
+        <section class="card skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>Time Management</li>
+            <li>Fast Learner</li>
+            <li>Adaptability</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Python • Tkinter • C/C++ • HTML/CSS (Basic)</li>
+          </ul>
+        </section>
+
+        <section class="card langs">
+          <h3>Languages</h3>
+          <ul>
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Odia</li>
+          </ul>
+        </section>
+
+        <section class="card hobbies">
+          <h3>Hobbies</h3>
+          <p>Painting, Sketching, DIYs, Listening to music</p>
+        </section>
+      </aside>
+
+      <section class="right-col">
+
+        <section class="card profile">
+          <h2>Profile</h2>
+          <p>CS student with hands-on Python and a growing interest in Web Dev & ML. Built a GUI project and currently learning HTML/CSS and web development. Committed to learning, contributing to teams and building useful projects.</p>
+        </section>
+
+        <section class="card quests">
+          <h2>Quest Log (Education)</h2>
+          <div class="quest-list">
+            <div class="quest">
+              <div class="q-title">BE-CSE — Chandigarh University <span class="meta">Jul 2024 — Present</span></div>
+              <button class="small-btn claim" data-xp="40">Complete Quest (+40 XP)</button>
+            </div>
+            <div class="quest">
+              <div class="q-title">HMR International School <span class="meta">Jun 2022 — Mar 2024</span></div>
+              <button class="small-btn claim" data-xp="20">Complete Quest (+20 XP)</button>
+            </div>
+            <div class="quest">
+              <div class="q-title">DPS - Bengaluru North <span class="meta">Jun 2011 — Mar 2022</span></div>
+              <button class="small-btn claim" data-xp="10">Complete Quest (+10 XP)</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="card achievements">
+          <h2>Achievements & Badges</h2>
+          <div class="badges">
+            <div class="badge" data-xp="60" id="badge-hack">Smart India Hackathon 2024 — Participant</div>
+            <div class="badge" data-xp="50" id="badge-google">Google Girl Hackathon 2025 — Semi-Finalist</div>
+            <div class="badge" data-xp="30" id="badge-iste">ISTE CU Chapter — Volunteer</div>
+          </div>
+        </section>
+
+        <section class="card projects" id="projects">
+          <h2>Projects</h2>
+          <article class="project-card">
+            <h3>Simple Tax Assistant</h3>
+            <p>Python GUI with chatbot and tax calculator.</p>
+            <p>GitHub: <a href="https://github.com/scah24/Tax-Assistant" target="_blank">github.com/scah24/Tax-Assistant</a></p>
+            <button class="small-btn claim" data-xp="80">Claim Project XP (+80 XP)</button>
+          </article>
+        </section>
+
+        <section class="card courses">
+          <h2>Courses</h2>
+          <ul>
+            <li>Python — Codio / Coursera</li>
+            <li>IoT Devices — University of Illinois</li>
+            <li>Cloud Computing — Duke University</li>
+            <li>Network Security — University of London</li>
+          </ul>
+        </section>
+
+        <section class="card tools">
+          <h2>Tools & Platforms</h2>
+          <ul>
+            <li>VS Code</li>
+            <li>GitHub</li>
+            <li>Jupyter Notebook</li>
+            <li>Google Colab</li>
+          </ul>
+        </section>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Made with ❤️ — Click badges/quests to earn XP. Progress saved locally.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
